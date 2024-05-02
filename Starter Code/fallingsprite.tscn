@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://brh7kltllweha"]
+
+[ext_resource type="Texture2D" uid="uid://rb8smo0f45mc" path="res://icon.svg" id="1_4m658"]
+[ext_resource type="Script" path="res://fallingspritecollisonscript.gd" id="1_yplvd"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bdcwb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i6q3c"]
+size = Vector2(128, 128)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+position = Vector2(480, 160)
+physics_material_override = SubResource("PhysicsMaterial_bdcwb")
+lock_rotation = true
+contact_monitor = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_i6q3c")
+script = ExtResource("1_yplvd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4m658")
+
+[connection signal="body_entered" from="." to="CollisionShape2D" method="_on_rigid_body_2d_body_entered"]

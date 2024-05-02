@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bte7b24muyygh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ypeh"]
+size = Vector2(1042, 20)
+
+[node name="Ground" type="StaticBody2D"]
+
+[node name="FLOOR" type="CollisionShape2D" parent="."]
+position = Vector2(511, 0)
+shape = SubResource("RectangleShape2D_7ypeh")

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cowobgsa5vw02"]
+
+[ext_resource type="Script" path="res://groundscript.gd" id="1_naybt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cswqa"]
+size = Vector2(1034, 20)
+
+[node name="Ground" type="Area2D"]
+script = ExtResource("1_naybt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(512, 1016)
+shape = SubResource("RectangleShape2D_cswqa")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

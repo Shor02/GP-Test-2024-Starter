@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://rb8smo0f45mc" path="res://icon.svg" id="1_xxq6a"]
 [ext_resource type="Script" path="res://Button.gd" id="1_yjt07"]
 [ext_resource type="Script" path="res://CountLabel.gd" id="2_wht2m"]
-[ext_resource type="PackedScene" uid="uid://bte7b24muyygh" path="res://newground.tscn" id="4_c1j5s"]
+[ext_resource type="PackedScene" path="res://newground.tscn" id="4_c1j5s"]
 [ext_resource type="Script" path="res://CollisionPolygon2D.gd" id="5_3p4au"]
 
 [sub_resource type="GDScript" id="GDScript_ur7lx"]

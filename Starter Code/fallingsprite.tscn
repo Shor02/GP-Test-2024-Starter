@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://brh7kltllweha"]
+[gd_scene load_steps=5 format=3 uid="uid://fv8nmbmivm4l"]
 
 [ext_resource type="Texture2D" uid="uid://rb8smo0f45mc" path="res://icon.svg" id="1_4m658"]
 [ext_resource type="Script" path="res://fallingspritecollisonscript.gd" id="1_yplvd"]

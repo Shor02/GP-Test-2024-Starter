@@ -12,6 +12,7 @@ size = Vector2(128, 128)
 position = Vector2(480, 160)
 physics_material_override = SubResource("PhysicsMaterial_bdcwb")
 lock_rotation = true
+max_contacts_reported = 100
 contact_monitor = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

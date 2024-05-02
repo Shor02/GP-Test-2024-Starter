@@ -11,5 +11,5 @@ func _on_pressed():
 	for n in slidercount.value:
 		var newfallingsprite = fallingsprite.instantiate()
 		newfallingsprite.position.x = randf_range(20, s.x - 20)
-		newfallingsprite.position.y = randf_range(20, s.x - 20)
+		newfallingsprite.position.y = randf_range(20, s.y - 20)
 		get_tree().root.add_child(newfallingsprite)
